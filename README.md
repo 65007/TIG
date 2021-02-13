@@ -80,7 +80,7 @@ Now update the repository and install the 'influxdb' package using the apt comma
 
 
 
-![](screenshot/image01.jpeg)
+![](screenshot/image01.png)
 
 
 
@@ -101,7 +101,7 @@ Now check the opened ports on the system:
 
 
 
-![](screenshot/image02.jpeg)
+![](screenshot/image02.png)
 
 
 
