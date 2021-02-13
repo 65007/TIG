@@ -80,7 +80,7 @@ Now update the repository and install the 'influxdb' package using the apt comma
 
 
 
-![be4b1f0ca954c09de7b17e02f2c8955a](/Users/nicolas.antoniello/Documents/65007-Git/TIG/_images/be4b1f0ca954c09de7b17e02f2c8955a.jpeg)
+![be4b1f0ca954c09de7b17e02f2c8955a](./_images/be4b1f0ca954c09de7b17e02f2c8955a.jpeg)
 
 
 
@@ -101,7 +101,7 @@ Now check the opened ports on the system:
 
 
 
-![930247a6be23343fe834a6943dc71250](/Users/nicolas.antoniello/Documents/65007-Git/TIG/_images/930247a6be23343fe834a6943dc71250.jpeg)
+![930247a6be23343fe834a6943dc71250](./_images/930247a6be23343fe834a6943dc71250.jpeg)
 
 
 
@@ -172,7 +172,7 @@ Make sure you get the database and user named 'telegraf' on the influxdb server.
 
 
 
-![af3b289308dec8ec59e315eb535972c2](/Users/nicolas.antoniello/Documents/65007-Git/TIG/_images/af3b289308dec8ec59e315eb535972c2.jpeg)
+![af3b289308dec8ec59e315eb535972c2](./_images/af3b289308dec8ec59e315eb535972c2.jpeg)
 
 
 
@@ -209,7 +209,7 @@ The telegraf agent is up and running, let's check it:
 
 
 
-![a45ca7f07d8e0d231fd98f3719d4075a](/Users/nicolas.antoniello/Documents/65007-Git/TIG/_images/a45ca7f07d8e0d231fd98f3719d4075a.jpeg)
+![a45ca7f07d8e0d231fd98f3719d4075a](./_images/a45ca7f07d8e0d231fd98f3719d4075a.jpeg)
 
 
 
@@ -359,7 +359,7 @@ Restart the telegraf service and make sure there is no error:
 
 
 
-![0328ff234b42bc0ed30d2a2036512879](/Users/nicolas.antoniello/Documents/65007-Git/TIG/_images/0328ff234b42bc0ed30d2a2036512879.jpeg)
+![0328ff234b42bc0ed30d2a2036512879](./_images/0328ff234b42bc0ed30d2a2036512879.jpeg)
 
 
 
@@ -373,7 +373,7 @@ Now test the telegraf settings:
 
 
 
-![bcc5ea5019d9df1c105a68f16da94c70](/Users/nicolas.antoniello/Documents/65007-Git/TIG/_images/bcc5ea5019d9df1c105a68f16da94c70.jpeg)
+![bcc5ea5019d9df1c105a68f16da94c70](./_images/bcc5ea5019d9df1c105a68f16da94c70.jpeg)
 
 
 
@@ -418,7 +418,7 @@ After you add the repository:
 
 
 
-![3d74c2fac4091814044d57a9a1bca2fe](/Users/nicolas.antoniello/Documents/65007-Git/TIG/_images/3d74c2fac4091814044d57a9a1bca2fe.png)
+![3d74c2fac4091814044d57a9a1bca2fe](./_images/3d74c2fac4091814044d57a9a1bca2fe.png)
 
 
 
@@ -437,7 +437,7 @@ The grafana-server is up and running on default port '3000', check it using nets
 # netstat -plntu
 ```
 
-![7e8125a848a37a65b70dd8a0b103af6a](/Users/nicolas.antoniello/Documents/65007-Git/TIG/_images/7e8125a848a37a65b70dd8a0b103af6a.png)
+![7e8125a848a37a65b70dd8a0b103af6a](./_images/7e8125a848a37a65b70dd8a0b103af6a.png)
 
 
 
@@ -451,13 +451,13 @@ Open your web browser and type the server IP address with port 3000.
 
 Login with the default user 'admin' and password 'admin':
 
-![f6bc302277a1611d3686befa9b39038d](/Users/nicolas.antoniello/Documents/65007-Git/TIG/_images/f6bc302277a1611d3686befa9b39038d.jpeg)
+![f6bc302277a1611d3686befa9b39038d](./_images/f6bc302277a1611d3686befa9b39038d.jpeg)
 
 
 
 Now you will be prompted with the page for changing the default password, type your new password and click the 'Save' button:
 
-![7d21df49dda1794fe9ef65b4f6080fd3](/Users/nicolas.antoniello/Documents/65007-Git/TIG/_images/7d21df49dda1794fe9ef65b4f6080fd3.jpeg)
+![7d21df49dda1794fe9ef65b4f6080fd3](./_images/7d21df49dda1794fe9ef65b4f6080fd3.jpeg)
 
 
 
@@ -473,7 +473,7 @@ The details about the influxdb server configurations are:
 - Type: influxdb
 - URL: http://localhost:8086/
 
-![Grafana - Picture 1](/Users/nicolas.antoniello/Documents/65007-Git/TIG/_images/Grafana - Picture 1.png)
+![Grafana - Picture 1](./_images/Grafana - Picture 1.png)
 
 
 
@@ -483,13 +483,13 @@ Scroll to the bottom page and type details of influxdb database settings:
 - User: telegraf
 - Password: 'hakase-ndlr'
 
-![Grafana - Picture 2](/Users/nicolas.antoniello/Desktop/TIG/Grafana - Picture 2.png)
+![Grafana - Picture 2](./_images/Grafana - Picture 2.png)
 
 
 
 Click the 'Save and Test' button and make sure you get the 'Data source is working' result:
 
-![Grafana - Picture 3](/Users/nicolas.antoniello/Desktop/TIG/Grafana - Picture 3.png)
+![Grafana - Picture 3](./_images/Grafana - Picture 3.png)
 
 
 
@@ -518,13 +518,13 @@ Now open the sample Grafana dashboard from URL 'https://grafana.com/dashboards/5
 
 On the options section, click the InfluxDB and choose your influxdb server, then click 'Import' button:
 
-![Grafana - Picture 4](/Users/nicolas.antoniello/Desktop/TIG/Grafana - Picture 4.png)
+![Grafana - Picture 4](./_images/Grafana - Picture 4.png)
 
 
 
 Below are some screenshots from the imported dashboard:
 
-![Grafana - Picture 5](/Users/nicolas.antoniello/Desktop/TIG/Grafana - Picture 5.png)
+![Grafana - Picture 5](./_images/Grafana - Picture 5.png)
 
 
 
@@ -544,7 +544,7 @@ Use the following command to generate a private key file (.key) and a self-signe
 
 > When you execute the command, it will prompt you for more information. You can choose to fill out that information or leave it blank; both actions generate valid certificate files.
 
-![openssl - Picture 1](/Users/nicolas.antoniello/Documents/65007-Git/TIG/_images/openssl - Picture 1.png)
+![openssl - Picture 1](./_images/openssl - Picture 1.png)
 
 
 
@@ -656,7 +656,7 @@ Now you have to change Grafana configuration to connect to InfluxDB using HTTPS 
 
 Go to Grafana URL (**http://10.0.1.25:3000/**) and select “configuration” icon on the left panel (the wheel) and then select InfuxDB data source:
 
-![Grafana - Picture 6](/Users/nicolas.antoniello/Documents/65007-Git/TIG/_images/Grafana - Picture 6.png)
+![Grafana - Picture 6](./_images/Grafana - Picture 6.png)
 
 
 
@@ -664,7 +664,7 @@ Once there, change the URL to: ***https://localhost:8086/***
 
 > Since we used a self signed certificate, you have to also turn on “Skip TLS Verify” option
 
-![Grafana - Picture 7](/Users/nicolas.antoniello/Documents/65007-Git/TIG/_images/Grafana - Picture 7.png)
+![Grafana - Picture 7](./_images/Grafana - Picture 7.png)
 
 Save and Test configuration and make sure you get a green banner indicating everything is working again !
 
