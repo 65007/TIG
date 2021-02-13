@@ -172,7 +172,7 @@ Make sure you get the database and user named 'telegraf' on the influxdb server.
 
 
 
-![](screenshot/image03.jpeg)
+![](screenshot/image03.png)
 
 
 
@@ -209,7 +209,7 @@ The telegraf agent is up and running, let's check it:
 
 
 
-![](screenshot/image04.jpeg)
+![](screenshot/image04.png)
 
 
 
@@ -359,7 +359,7 @@ Restart the telegraf service and make sure there is no error:
 
 
 
-![](screenshot/image05.jpeg)
+![](screenshot/image05.png)
 
 
 
@@ -373,7 +373,7 @@ Now test the telegraf settings:
 
 
 
-![](screenshot/image06.jpeg)
+![](screenshot/image06.png)
 
 
 
@@ -451,13 +451,13 @@ Open your web browser and type the server IP address with port 3000.
 
 Login with the default user 'admin' and password 'admin':
 
-![](screenshot/image09.jpeg)
+![](screenshot/image09.png)
 
 
 
 Now you will be prompted with the page for changing the default password, type your new password and click the 'Save' button:
 
-![](screenshot/image10.jpeg)
+![](screenshot/image10.png)
 
 
 
