@@ -101,7 +101,7 @@ Now check the opened ports on the system:
 
 
 
-![930247a6be23343fe834a6943dc71250](/Users/nicolas.antoniello/Documents/GitHub-65007/TIG/_images/image02.jpeg)
+![930247a6be23343fe834a6943dc71250](/Users/nicolas.antoniello/Documents/GitHub-65007/TIG/_images/image_02.jpeg)
 
 
 
