@@ -2,6 +2,8 @@
 
 # (Telegraf+InfluxDB+Grafana)
 
+![](screenshot/image01.png)
+
 
 
 **Telegraf** is an agent for collecting, processing, aggregating, and writing metrics. It supports various output plugins such as influxdb, Graphite, Kafka, OpenTSDB etc.
@@ -80,10 +82,6 @@ Now update the repository and install the 'influxdb' package using the apt comma
 
 
 
-![](screenshot/image01.png)
-
-
-
 After the installation is complete, start the influxdb service and enable it to launch every time at system boot:
 
 ```
@@ -93,7 +91,7 @@ After the installation is complete, start the influxdb service and enable it to 
 
 
 
-Now check the opened ports on the system:
+Now check the opened ports on the system (look for *influxd* entries):
 
 ```
 # netstat -plntu
@@ -103,9 +101,7 @@ Now check the opened ports on the system:
 
 ![](screenshot/image02.png)
 
-
-
-And make sure you get influxdb ports '8088'and '8086' on the 'LISTEN' state.
+Verify you get influxdb ports '8088'and '8086' on the 'LISTEN' state.
 
 
 
@@ -174,7 +170,14 @@ Make sure you get the database and user named 'telegraf' on the influxdb server.
 
 ![](screenshot/image03.png)
 
+> Note that my screenshot above indicates HTTPS connection but at this point yours should be using HTTP.
+>
 
+Use *quit* command to exit influx command line.
+
+```
+> quit
+```
 
 
 
@@ -210,6 +213,8 @@ The telegraf agent is up and running, let's check it:
 
 
 ![](screenshot/image04.png)
+
+
 
 
 
@@ -351,15 +356,12 @@ Save and exit.
 
 
 
-Restart the telegraf service and make sure there is no error:
+Restart the telegraf service and make sure there is no error (checking telegraf status):
 
 ```
 # systemctl restart telegraf
+# systemctl status telegraf
 ```
-
-
-
-![](screenshot/image05.png)
 
 
 
@@ -371,7 +373,7 @@ Now test the telegraf settings:
 # telegraf -test -config /etc/telegraf/telegraf.conf --input-filter mem
 ```
 
-
+THe output from those tests should be something like this:
 
 ![](screenshot/image06.png)
 
@@ -669,6 +671,22 @@ Once there, change the URL to: ***https://localhost:8086/***
 Save and Test configuration and make sure you get a green banner indicating everything is working again !
 
 *Done ! Now you should be able to see you dashboard again !*
+
+
+
+> **Note that from now on, as we switched to HTTPS, each time you're using Influx command line you'll have to add some parameters when issueing *influx* command (as *influx* alone will attempt to connect to the database using HTTP instad of HTTPS):**
+
+```
+# influx -ssl -unsafeSsl
+```
+
+![](screenshot/image19.png)
+
+Again, use *quit* command to exit Influx command line.
+
+
+
+---
 
 
 
