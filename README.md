@@ -23,6 +23,7 @@
 - Install Grafana
 - Setup a Grafana Data Source (the InfluxDB we created)
 - Setup a Grafana Dashboard to view the server system statistics
+- Not to die trying to set up all this shit !
 
 
 
