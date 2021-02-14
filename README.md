@@ -26,8 +26,8 @@
 
 
 
-> For this set up, I'm using an Ubuntu server located into a ProxMox container.
->
+> **For this set up, I'm using a fresh installation of Ubuntu server located into a ProxMox container (you may use the same, a VM of your choice or a native Ubuntu running right over your hardware).**
+>**My server (were we are going to install and run all this stuff) is called "*stats1*" and it has a fixed IP address *10.0.1.25/24*.**
 
 
 
@@ -674,7 +674,7 @@ Save and Test configuration and make sure you get a green banner indicating ever
 
 
 
-> **Note that from now on, as we switched to HTTPS, each time you're using Influx command line you'll have to add some parameters when issueing *influx* command (as *influx* alone will attempt to connect to the database using HTTP instad of HTTPS):**
+> **Note that from now on, as we switched to HTTPS, each time you're using Influx command line you'll have to add some parameters when issuing *influx* command (as *influx* alone will attempt to connect to the database using HTTP instad of HTTPS):**
 
 ```
 # influx -ssl -unsafeSsl
