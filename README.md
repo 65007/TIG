@@ -63,6 +63,8 @@ Add the influxdata Key:
 # curl -sL https://repos.influxdata.com/influxdb.key | sudo apt-key add -
 ```
 
+> In case you don't have *curl* installed, just issue "*apt-get install curl*" and you may try again :)
+
 
 
 Add the influxdata repository:
