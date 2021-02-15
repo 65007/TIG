@@ -245,6 +245,9 @@ Go to the '/etc/telegraf' directory and rename the default configuration file:
 
 Now create a new other configuration 'telegraf.conf' using nano editor:
 
+> Make sure you review and edit the configuration below according to your desired system config. In particular you should edit the "## HTTP Basic Auth" parameters in the "Output Pluggins section" part incase you picked a diffrerent password or database name for your InfluxDB Telegraf database.
+> As for the rest, you may leave it as it is and yes, it should work !
+
 ```
 # nano telegraf.conf
 ```
@@ -404,7 +407,7 @@ Add this repository for stable releases (It might be wise to add this one):
 
 
 
-Add this repository if you want beta releases:
+Add this repository if you want beta releases (I rather *do not* add this one... unless you feel lucky!):
 
 ```
 # echo "deb https://packages.grafana.com/oss/deb beta main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
