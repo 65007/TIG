@@ -28,7 +28,7 @@
 
 
 > **For this set up, I'm using a fresh installation of Ubuntu server located into a ProxMox container (you may use the same, a VM of your choice or a native Ubuntu running right over your hardware).**
->**My server (were we are going to install and run all this stuff) is called "*stats1*" and it has a fixed IP address *10.0.1.25/24*.**
+>**My server (where we are going to install and run all this stuff) is called "*stats1*" and it has a fixed IP address *10.0.1.25/24*.**
 
 
 
@@ -149,7 +149,7 @@ Now you are connected to the default influxdb server on port '8086'.
 
 
 
-Create a new database and user 'telegraf' with the password 'hakase-ndlr' by running influxdb queries:
+Create a new database and user 'telegraf' with the password 't313graf' by running influxdb queries:
 
 ```
 > create database telegraf
@@ -247,7 +247,7 @@ Go to the '/etc/telegraf' directory and rename the default configuration file:
 
 Now create a new other configuration 'telegraf.conf' using nano editor:
 
-> Make sure you review and edit the configuration below according to your desired system config. In particular you should edit the "## HTTP Basic Auth" parameters in the "Output Pluggins section" part incase you picked a diffrerent password or database name for your InfluxDB Telegraf database.
+> Make sure you review and edit the configuration below according to your desired system config. In particular you should edit the "hostname" parameter in the "agent" and the "## HTTP Basic Auth" parameters in the "Output Pluggins section" part incase you picked a diffrerent password or database name for your InfluxDB Telegraf database.
 > As for the rest, you may leave it as it is and yes, it should work !
 
 ```
@@ -489,7 +489,7 @@ Scroll to the bottom page and type details of influxdb database settings:
 
 - Database: telegraf
 - User: telegraf
-- Password: 'hakase-ndlr'
+- Password: 't313graf'
 
 ![](screenshot/image12.png)
 
